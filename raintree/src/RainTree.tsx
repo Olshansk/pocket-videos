@@ -1,9 +1,9 @@
 import {interpolate, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
-import {Logo} from './HelloWorld/Logo';
-import {Subtitle} from './HelloWorld/Subtitle';
-import {Title} from './HelloWorld/Title';
+import {Logo} from './RainTree/Logo';
+import {Subtitle} from './RainTree/Subtitle';
+import {Title} from './RainTree/Title';
 
-export const HelloWorld: React.FC<{
+export const RainTree: React.FC<{
 	titleText: string;
 	titleColor: string;
 }> = ({titleText, titleColor}) => {

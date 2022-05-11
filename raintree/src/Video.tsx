@@ -1,15 +1,15 @@
 import {Composition} from 'remotion';
-import {HelloWorld} from './HelloWorld';
-import {Logo} from './HelloWorld/Logo';
-import {Subtitle} from './HelloWorld/Subtitle';
-import {Title} from './HelloWorld/Title';
+import {RainTree} from './RainTree';
+import {Logo} from './RainTree/Logo';
+import {Subtitle} from './RainTree/Subtitle';
+import {Title} from './RainTree/Title';
 
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
 			<Composition
-				id="HelloWorld"
-				component={HelloWorld}
+				id="RainTree"
+				component={RainTree}
 				durationInFrames={150}
 				fps={30}
 				width={1920}
