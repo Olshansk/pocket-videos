@@ -1,8 +1,6 @@
 import {Composition} from 'remotion';
 import {RainTree} from './RainTree';
-import {Logo} from './RainTree/Logo';
-import {Subtitle} from './RainTree/Subtitle';
-import {Title} from './RainTree/Title';
+import {WIDTH, HEIGHT} from './RainTree/config';
 
 export const RemotionVideo: React.FC = () => {
 	return (
@@ -12,40 +10,12 @@ export const RemotionVideo: React.FC = () => {
 				component={RainTree}
 				durationInFrames={150}
 				fps={30}
-				width={1920}
-				height={1080}
+				width={WIDTH}
+				height={HEIGHT}
 				defaultProps={{
-					titleText: 'Welcome to Remotion',
+					titleText: 'RainTree',
 					titleColor: 'black',
 				}}
-			/>
-			<Composition
-				id="Logo"
-				component={Logo}
-				durationInFrames={200}
-				fps={30}
-				width={1920}
-				height={1080}
-			/>
-			<Composition
-				id="Title"
-				component={Title}
-				durationInFrames={100}
-				fps={30}
-				width={1920}
-				height={1080}
-				defaultProps={{
-					titleText: 'Welcome to Remotion',
-					titleColor: 'black',
-				}}
-			/>
-			<Composition
-				id="Subtitle"
-				component={Subtitle}
-				durationInFrames={100}
-				fps={30}
-				width={1920}
-				height={1080}
 			/>
 		</>
 	);
